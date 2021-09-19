@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/anillosstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Zen+Loop&display=swap" rel="stylesheet">
+
+    <title>Anillos | Maya Joyas</title>
+    
+</head>
+
+<!-- HEADER -->
+<%- include('header'); %>
+
+<main>
+    
+    <!-- MAIN -->
+    <h2 class="page_title">Anillos</h2>
+
+    <div class="filtros">
+
+        <h3>Categorías</h3>
+        <p class="catg">Anillos sin piedra</p>
+        <p class="catg">Anillos con piedra</p>
+
+    </div>
+
+    <div class="piezas">
+    
+    <% anillos.forEach(anillo => { %>
+        <div class="tarjeta-pieza">
+            <img class="imagen-pieza" alt="<%= anillo.nombre %>" src="<%= anillo.imagen %>" />
+            <h3><%=anillo.nombre%></h3>
+            <p><%= anillo.precio %></p>
+            <p><%= anillo.materiales %></p>
+        </div>
+    <% }); %>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<%- include('footer'); %>
+

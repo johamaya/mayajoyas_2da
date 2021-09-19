@@ -1,0 +1,61 @@
+body {
+    background-color: #f2e9e4;
+  }
+
+  .page_title {
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    margin-left: 10vw;
+    margin-right: 15vw;
+  }
+
+  p {
+    text-align: center;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+    margin-left: 10vw;
+    margin-right: 15vw;
+  }
+
+  #gracias {
+    margin-bottom: 8vh;
+  }
+
+  label {
+    margin-left: 7vw;
+    margin-right: 7vw;
+  }
+
+  input {
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    width: 20vw;
+    height: 4.5vh;
+  }
+
+  #mensaje {
+      width: 60vw;
+      margin-top: 2vh;
+      margin-bottom: 3vh;
+      margin-left: 8vw;
+  }
+
+ 
+
+  button {
+      margin-bottom:  7vh;
+         
+  }
+
+  #enviar {
+    margin-left: 10vw;
+    width: 5vw;
+  }
+
+  #reset {
+      margin-left: 3vw;
+      width: 8vw;
+  }

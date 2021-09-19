@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  a, a:hover, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+   }
+  
+  header {
+    display: grid;
+    grid-template-columns: 60vw 40vw;
+    grid-template-areas: "LogoJM MenuUsuario";
+    background-color: #ede0d4;
+    align-items: center;
+    justify-items: center;  
+  }
+  
+   
+  #LogoJM {
+    height: 10vh;
+    grid-area: LogoJM;
+    margin: 1vh 0;
+    padding-left: 30vw;
+  }
+  
+  #Menu-Usuario {
+    grid-area: MenuUsuario;
+    align-self: center;
+    font-size: x-small;
+    display: grid;
+    grid-template-columns: 2vw 3vw 2vw 3vw 2vw 3vw;
+    grid-template-areas: "iconoBuscar Buscar iconoCuenta Cuenta iconoCesta Cesta";
+    background-color: #ede0d4;
+  }
+  
+  .menu-usu {
+    margin-left: 20%;
+    margin-right: 30%;
+    color: rgb(48, 48, 48);
+  }
+  
+  .icon-sup {
+    height: 2vh;
+    justify-self: center;
+    align-self: center;
+  }
+  
+  #iconoBuscar {
+    grid-area: iconoBuscar;
+  }
+  
+  #Buscar {
+    grid-area: Buscar;
+    color: rgb(48, 48, 48);
+  }
+  
+  #iconoCuenta {
+    grid-area: iconoCuenta;
+  }
+  
+  #Cuenta {
+    grid-area: Cuenta;
+    color: rgb(48, 48, 48);
+  }
+  
+  #iconoCesta {
+    grid-area: iconoCesta;
+  }
+  
+  #Cesta {
+    grid-area: Cesta;
+    color: rgb(48, 48, 48);
+  }
+  
+  nav {
+    font-size: smaller;
+    
+  }
+  
+  nav ul {
+    background-color: #f2e9e4;
+  }
+  
+  ul.navegacion {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  li {
+    display: grid;
+    justify-items: center;
+    padding: 10px 5px;
+    cursor: pointer;
+    color: black;
+  }
+  
+  li:hover {
+    background-color: #9e9996;
+    color: white;
+  }
+  
+  ul.sub-navegacion {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+  }
+  
+  ul.sub-navegacion:hover {
+    display: grid;
+    
+  }
+  
+  li:hover > ul.sub-navegacion {
+    display: grid;
+  }
+  
+  li {
+    position: relative;
+  }
+  
+  .sub-navegacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+  
+  .encabezado {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+
+  footer {
+    background-color: rgb(99, 96, 87);
+    grid-area: pie;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "Pie1";
+    justify-items: center;
+    }
+  
+  .divs-pie {
+    margin-top: 2vw;
+    margin-left: 0;
+    margin-right: 10vw;
+    margin-bottom: 2vw;
+    font-size: x-small;
+    justify-content: left;
+    
+  }
+  
+  .titulos-pie {
+    font-size: small;
+    color: white;
+    margin-bottom: 5%;
+  }
+  
+  .logos-pie {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .links-pie {
+    margin-left: 5%;
+    color: white;
+  }
+  
+  #Pie1 {
+    display: grid;
+    grid-template-columns: 0.5fr 9.5fr;
+    grid-template-areas:
+      "Redes Redes"
+      "IG Instagram"
+      "FB Facebook";
+    grid-area: Pie1;
+  }
+  
+  #Redes {
+    grid-area: Redes;
+  }
+  
+  #logo-IG {
+    grid-area: IG;
+  }
+  
+  #Instagram {
+    grid-area: Instagram;
+  }
+  
+  #logo-FB {
+    grid-area: FB;
+  }
+  
+  #Facebook {
+    grid-area: Facebook;
+  }
+  
+  
+
+  @media (max-width: 800px) {
+
+    header {
+      display: grid;
+      grid-template-columns: 20vw 40vw 40vw;
+      
+    }
+  
+    #Contacto1 {
+      font-size: 0.5rem;
+      align-self: center;
+      margin-right: 0;
+    }
+  
+    #LogoJM {
+      height: 3.5vh;
+      justify-self: center;
+    }
+  
+    #Menu-Usuario {
+      margin-left: 5%;
+      align-content: center;
+    }
+    
+    img.icon-sup {
+      height: 0.5rem;
+      justify-self: right;
+      align-self: center;
+    }
+  
+    .menu-usu {    
+      font-size: 0.5rem;
+      align-self: center;
+    }
+  
+    nav {
+      font-size: xx-small;
+      height: 2vh;
+    }
+  
+    .sub-navegacion {
+      font-size: 0.45rem;
+    }
+
+    footer {
+        padding-bottom: 30px;
+        padding-top: 15px;
+      }
+    
+      .logos-pie {
+        padding: 5%;
+      }
+    
+    }
+
+  
+ 

@@ -1,0 +1,132 @@
+main {
+    background-color: #f2e9e4;
+  }
+  
+  .contenedor-carrusel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #f2e9e4;
+    padding-top: 5vh;
+  }
+  
+  .carrusel {
+    display: flex;
+    height: 400px;
+    margin-left: -100%;
+  }
+  
+  .carrusel_seccion {
+    width: 100%;
+  }
+  
+  .carrusel_img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+  }
+  
+  .carrusel_boton {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.568);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .carrusel_boton:hover {
+    background-color: #fff;
+  }
+  
+  .carrusel_botonizq {
+    left: 10px;
+  }
+  
+  .carrusel_botonder {
+    right: 10px;
+  }
+  
+  #Informacion {
+    background-color: #f2e9e4;
+    grid-area: informacion;
+    display: grid;
+    grid-template-columns: 1/3% 1/3% 1/3%;
+    grid-template-areas: "TratoP Suscribite Garantias";
+  }
+  
+  .iconos-sec {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 15%;
+  }
+  
+  .H3-sec {
+    margin-left: 5%;
+    font-size: medium;
+  }
+  
+  .textos-sec {
+    margin: 5%;
+    margin-bottom: 10%;
+    font-size: small;
+  }
+  
+  #TratoP {
+    grid-area: TratoP;
+  }
+  
+  #Suscribite {
+    grid-area: Suscribite;
+  }
+  
+  #Garantias {
+    grid-area: Garantias;
+  }
+
+
+  @media (max-width: 800px) {
+
+  .carrusel {
+    height: 100%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+  
+  .carrusel_img {
+    object-fit: scale-down;
+  }
+
+  .carrusel_boton {
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+  }
+  
+  .iconos-sec {
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 20%;
+    height: 40px;
+  }
+
+  .H3-sec {
+    margin-left: 7%;
+    font-size: x-small;
+  }
+
+  .textos-sec {
+    margin: 5%;
+    font-size: x-small;
+    margin-bottom: 40%;
+  }
+
+}
+

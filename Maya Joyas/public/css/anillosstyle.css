@@ -1,0 +1,81 @@
+  main {
+    display: grid;
+    grid-template-columns: 20vw 70vw;
+    grid-template-rows: 15vh 85vh;
+    grid-template-areas: "page_title page_title"
+                          "filtros   piezas";
+    height: 100vh;
+    background-color: #F4F6F6;
+  }
+
+  .page_title {
+    padding-left: 4vw;
+    padding-top: 5vh;
+    grid-area: page_title;    
+  }
+
+  .filtros {
+    grid-area: filtros;
+    padding-left: 4vw;
+  }
+
+  .catg {
+    padding-top: 2vh;
+  }
+
+  .piezas {
+    grid-area: piezas;
+  }
+  
+  .imagen-pieza {
+    width: 100%;
+  }
+  
+  .tarjeta-pieza {
+    display: inline-block;
+    border: rgba(211, 211, 211, 0.644) 1px;
+    border-style: solid;
+    width: 200px;
+    height: 250px;
+    border-radius: 1px;
+    margin: 3%;
+    padding: 20px;
+  }
+  
+  .tarjeta-pieza:hover {
+    border: black 2px;
+    border-style: solid;
+  }
+  
+  .nombre-pieza {
+    font-size: small;
+    color: rgb(44, 44, 44);
+  }
+  
+  .precio-pieza {
+    font-size: xx-small;
+    color: rgb(44, 44, 44);
+  }
+  
+  .materiales-pieza {
+    font-size: xx-small;
+    color: rgb(44, 44, 44);
+  }
+
+  @media (max-width: 800px) {
+
+    .tarjeta-pieza {
+        width: 120px;
+        height: 160px;
+        padding: 10px;
+        margin-top: 10%;
+      }
+    
+      .tarjeta-pieza:hover {
+        width: 130px;
+      }
+    
+      .nombre-pieza {
+        font-size: x-small;
+      }
+    }
